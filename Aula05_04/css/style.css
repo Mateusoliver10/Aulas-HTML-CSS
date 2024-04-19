@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.caixa{
+    background-color: blue;
+    width: 500px;
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 3%;
+    padding: 20px;
+}
+.head{
+    width: 500px;
+    height: 50px;
+}
+h1{
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 5px;
+}
+.texto{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    margin-top: 15px;
+    color: white;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif
+}
+.rodape{
+    width: 400px;
+    height: 40px;
+    margin: auto;
+    margin-top: 30px;
+}
+.textrodape{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}

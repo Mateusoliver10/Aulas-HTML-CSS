@@ -1,0 +1,30 @@
+*{padding: 0px;
+    margin: 0px;}
+    
+    .Imagem{
+        width: 250px;
+        height: 250px;
+    }
+    .imagem2{
+        width: 250px;
+        height: 250px;
+    }
+    .divimg2{
+        margin-left: 14%;
+    }
+    .divimg1{
+        margin-left: 14%;
+    }
+    .divimg3{
+        margin-left: 14%;
+    }
+    .bitcoin{
+        width: 250px;
+        height: 250px;
+    }
+    .conteiner{
+        width: 500px;
+        height: 820px;
+        margin: auto;
+        border: 2px solid black;
+    }
