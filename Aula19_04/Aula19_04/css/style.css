@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.head{
+    width: 550px;
+    height: 50px;
+    margin: 10px;
+ }
+.conteiner{
+    height: 550px;
+    width: 550px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: aqua;
+}
+.conteiner2{
+    margin-left: 600px;
+    height: 220px;
+    width: 200px;
+    border: solid 2px black;
+    padding: 5px;
+    margin-top: -20px;
+}
+.conteiner3{
+    margin-left: 600px;
+    height: 220px;
+    width: 200px;
+    border: solid 2px black;
+    padding: 5px;
+}
+.conteiner4{
+    margin-left: 900px;
+    height: 500px;
+    width: 200px;
+    border: solid 2px black;
+    padding: 5px;
+    margin-top: -488px;
+}
+.caixas{
+    padding-right: 10px;
+    margin-right: 100px;
+}
