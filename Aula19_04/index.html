@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function calc() {
+            var num1 = parseInt(document.getElementById('num1').value)
+            var num2 = parseInt(document.getElementById('num2').value)
+            var num3 = parseInt(document.getElementById('num3').value)
+            var num4 = parseInt(document.getElementById('num4').value)
+            var valor1 = parseInt(document.getElementById('valor1').value)
+            var valor2 = parseInt(document.getElementById('valor2').value)
+            var valor3 = parseInt(document.getElementById('valor3').value)
+            var quant1 = parseInt(document.getElementById('quant1').value)
+            var quant2 = parseInt(document.getElementById('quant2').value)
+            var quant3 = parseInt(document.getElementById('quant3').value)
+            area = num1 * num2
+            area2 = num4 * num3
+            resultado = (quant1 * valor1) + (quant2 * valor3) + (quant3 * valor3)
+            document.getElementById('botao').value = resultado
+            document.getElementById('area').value = area
+            document.getElementById('area2').value = area2
+        }
+    </script>
+</head>
+
+<body>
+    <div class="head">
+        <h1>Questionário </h1>
+        <form class="conteiner">
+            <label for="">Documento </label><input type="text" name="Endereço" placeholder="Digite seu Documento"
+                size="=40" maxlength="150" />
+            <br><br>
+            <label for="">Data </label><input type="date" name="data_pedido" />
+            <br><br>
+            <label for="">Email </label> <input type="email" name="email" placeholder="Digite seu Email" size="60"
+                maxlength="150">
+            <br><br>
+            <label for="">Senha </label> <input type="password" name="senha" placeholder="Digite sua senha" size="40" />
+            <br><br>
+            <label for="">Data e Hora </label> <input type="datetime-local" name="datahora_local" />
+            <br><br>
+            <label for="">Imóveis </label>
+            <br>
+            <input type="radio" id="alternativa1" name="alternativa" value="A" /> <label for="alternativa1">
+                Casa</label>
+            <input type="radio" id="alternativa2" name="alternativa" value="B" /> <label for="alternativa2">
+                Prédio</label>
+            <input type="radio" id="alternativa3" name="alternativa" value="C" /> <label for="alternativa3">
+                Comercio</label>
+            <br><br>
+            <label for="">Veículos </label>
+            <br>
+            <input type="checkbox" id="carro" name="alternativa" value="A" /> <label for="carro"> Carro</label>
+            <input type="checkbox" id="moto" name="alternativa" value="B" /> <label for="moto"> Moto</label>
+            <br><br>
+            <label for="">Tipo de Endereço </label>
+            <br>
+            <select name="tipo_endereço" id="tipo_endereço">
+                <option value="AC">Casa </option>
+                <option value="AC">Prédio </option>
+                <option value="AC">Comercio </option>
+            </select>
+            <br><br>
+            <textarea name="texto" id="comentarios" cols="60" rows="5" placeholder="Comentários"></textarea>
+            <br><br>
+            <input type="submit" name="salvar" value="Salvar" />
+            <br><br>
+            <button name="enviar" value="enviar" onclick="alert('primeira mensagem!')">Enviar </button>
+        </form>
+    </div>
+    <div class="conteiner2">
+        <form>
+            <label for=""> Comprimento = A </label>
+            <input class="caixas" type="text" id="num1" size="5">
+            <br><br>
+            <label for=""> Altura = B </label>
+            <input class="caixas" type="text" id="num2" size="5">
+            <br><br>
+            <label for=""> AREA 1 </label>
+            <input class="caixas" type="text" id="area" size="5">
+            <br><br>
+            <button value="area" onclick="calc()"> Descobrir Área </button>
+            <br><br>
+        </form>
+    </div>
+    <br>
+    <div class="conteiner3">
+        <form>
+            <label for=""> Altura = B </label>
+            <input class="caixas" type="text" id="num3" size="5">
+            <br><br>
+            <label for=""> Comprimento = D </label>
+            <input class="caixas" type="text" id="num4" size="5">
+            <br><br>
+            <label for=""> AREA 2 </label>
+            <input class="caixas" type="text" id="area2" size="5">
+            <br><br>
+            <button value="area2" onclick="calc()"> Descobrir Área </button>
+        </form>
+    </div>
+    <div class="conteiner4">
+        <form action="">
+            <label for=""> Quantidade 1 </label>
+            <input class="caixas" type="text" id="quant1" size="5">
+            <br><br>
+            <label for=""> Quantidade 2 </label>
+            <input class="caixas" type="text" id="quant2" size="5">
+            <br><br>
+            <label for=""> Quantidade 3 </label>
+            <input class="caixas" type="text" id="quant3" size="5">
+            <br><br>
+            <label for=""> Valor 1 </label>
+            <input class="caixas" type="text" id="valor1" size="5">
+            <br><br>
+            <label for=""> Valor 2 </label>
+            <input class="caixas" type="text" id="valor2" size="5">
+            <br><br>
+            <label for=""> Valor 3 </label>
+            <input class="caixas" type="text" id="valor3" size="5">
+            <br><br>
+            <label for=""> Resultado </label>
+            <input class="caixas" type="text" id="botao" size="5">
+            <br><br>
+            <input type="submit" value="resultado" onclick="calc()">
+        </form>
+    </div>
+</body>
+
+</html>
